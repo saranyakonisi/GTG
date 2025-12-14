@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTG</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <!-- HERO -->
+  <section class="hero">
+
+    <!-- NAVBAR -->
+    <header class="header">
+      <div class="logo">GTG</div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+
+          <li class="dropdown">
+            <a href="#">
+              Shop
+              <img src="./assets/down.jpg" class="down-icon" alt="down" />
+            </a>
+          </li>
+
+          <li><a href="#">Fragrances</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <img
+          src="./assets/magnifyingglass.jpg"
+          class="search-icon"
+          alt="search"
+        />
+        <button class="nav-cta">Shop Now</button>
+        <div class="hamburger">☰</div>
+      </div>
+    </header>
+
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
+
+      <!-- BADGE -->
+      <span class="badge">
+        <img src="./assets/Medal.png" class="badge-icon" alt="medal" />
+        <span class="badge-text">Awarded the best perfume in the world</span>
+      </span>
+
+      <!-- HEADING -->
+      <h1 class="hero-title">Live your best life.</h1>
+
+      <!-- STATS -->
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>10x</strong>
+          <span>power</span>
+        </div>
+        <div class="stat">
+          <strong>9</strong>
+          <span>ingredients</span>
+        </div>
+        <div class="stat">
+          <strong>20K+</strong>
+          <span>happy customers</span>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <button class="hero-cta">Shop Now</button>
+
+    </div>
+  </section>
+
+<!-- ================= PRODUCT SECTION ================= -->
+<section class="product-section">
+
+  <!-- LEFT : GALLERY -->
+  <div class="gallery">
+
+    <div class="main-image">
+      <button class="arrow left" id="prevBtn">‹</button>
+
+      <img id="currentImage" src="./assets/productimg.png "alt="Perfume" />
+
+      <button class="arrow right" id="nextBtn">›</button>
+
+      <div class="dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+
+    <div class="thumbnails">
+      <img src="./assets/productsimg2.png" data-index="0" />
+     
+    </div>
+
+  </div>
+
+  <!-- RIGHT : PRODUCT INFO -->
+  <div class="product-info">
+
+    <h2 class="product-title">GTG Perfumes</h2>
+
+    <div class="rating">
+      ⭐⭐⭐⭐⭐ <span>4.7 (999+ reviews)</span>
+    </div>
+
+    <p class="description">
+      Experience the timeless allure backed by modern artistry, captured in every
+      bottle of our fragrance. Crafted for those who seek to elevate their essence
+      with purpose and sophistication.
+    </p>
+
+    <!-- SUBSCRIPTION -->
+    <div class="subscription-box">
+
+      <h3 class="most-popular">Most Popular</h3>
+
+      <!-- Purchase Type -->
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="purchase" value="single" checked />
+          Single Subscription
+        </label>
+
+        <label>
+          <input type="radio" name="purchase" value="double" />
+          Double Subscription
+        </label>
+      </div>
+
+      <!-- SINGLE -->
+      <div id="singleBox" class="subscription-content active">
+        <h4>Choose a Fragrance</h4>
+
+        <div class="radio-group">
+          <label><input type="radio" name="fragrance" value="original" checked /> Original</label>
+          <label><input type="radio" name="fragrance" value="lily" /> Lily</label>
+          <label><input type="radio" name="fragrance" value="rose" /> Rose</label>
+        </div>
+      </div>
+
+      <!-- DOUBLE -->
+      <div id="doubleBox" class="subscription-content">
+        <h4>Choose Fragrance 1</h4>
+        <div class="radio-group">
+          <label><input type="radio" name="fragrance1" value="original" checked /> Original</label>
+          <label><input type="radio" name="fragrance1" value="lily" /> Lily</label>
+          <label><input type="radio" name="fragrance1" value="rose" /> Rose</label>
+        </div>
+
+        <h4>Choose Fragrance 2</h4>
+        <div class="radio-group">
+          <label><input type="radio" name="fragrance2" value="original" checked /> Original</label>
+          <label><input type="radio" name="fragrance2" value="lily" /> Lily</label>
+          <label><input type="radio" name="fragrance2" value="rose" /> Rose</label>
+        </div>
+      </div>
+
+      <a id="addToCart" href="#" class="add-to-cart">Add to Cart</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script src="js/index.js"></script>
+</body>
+</html>
